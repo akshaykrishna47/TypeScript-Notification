@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+    background-color: rgba(255, 255, 255, 0.12); /* Normal background color */
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin: 0px 5px;
+    padding-bottom: 15px;
+}
+
+.App {
+    overflow: auto; /* Enable scrolling */
+    height: 100vh;
+    padding-top: 10px; /* Add padding to the top to prevent content from being hidden */
+}
+
+.notification-task-bar {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin: 0px 32px;
+    padding-bottom: 5px;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+    opacity: 90%;
+}
+
+.notification-task-title {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+    opacity: 90%;
+}
+
+.page-links-container {
+    display:flex;
+    flex-direction: row;
+    height: 48px;
+    width: 335px;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.page-link {
+    font-family: Roboto;
+    letter-spacing: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    opacity:70%;
+    text-decoration: none;
+    padding:0 1px;
+    transition: 0.3s ease;
+}
+
+.page-link:hover,
+.page-link.active {
+    padding-bottom: 9.5px;
+    font-family: Roboto;
+    border-bottom: 2px solid #8DCAFE;
+    text-decoration: none;
+    color: #8DCAFE; /* Move the link up to cover the line */
+}
+
+/* Main Page Styles */
+/* Add or modify styles to reduce the gap between notifications */
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notification-box {
+    margin-bottom: 10px;
+    width: 350px;
+    border-radius: 16px;
+    padding: 15px;
+    margin-top: 80px;
+    margin-bottom: 4px;
+    background-color: rgba(44,49,62,0.4);
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.3s ease, bottom 0.3s ease, left 0.3s ease, right 0.3s ease; /* Add transition for smooth movement */
+}
+
+
+/* Apply positioning based on calculated style */
+.notification-box.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.notification-box.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.notification-box.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.notification-box.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #8DCAFE;
+}
+
+
+.notification-title {
+    color: rgba(255,255,255,0.9);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* Settings Page Styles */
+label{
+    color:white;
+    opacity: 90%;
+    font-family: Roboto;
+    font-weight:400;
+    size:12px;
+}
+#notificationForm{
+    margin-top: 30px;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.10);
+    width: 912px;
+    border-radius: 16px;
+    height: 48px;
+    align-items: center;
+    margin-left: 32px;
+    margin-top:5px;
+    padding:0 16px;
+} 
+.label-bar{
+    width:352px;
+    text-align: left;
+    display: block;
+}
+
+.options-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.options-bar input {
+    width: 50px;
+    border: none; /* Remove border */
+    background-color: transparent; /* Make background transparent */
+    outline: none; /* Remove outline */
+    color: white; /* Set text color */
+    margin-right: 5px;
+}
